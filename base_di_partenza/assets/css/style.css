@@ -57,11 +57,7 @@ body {
 }
 @media (max-width: 768px) {
   .nav-links ul li {
-    flex-direction: none;
-  }
-
-  .logo {
-    margin-bottom: 10px;
+    flex-direction: column;
   }
 }
 
@@ -122,34 +118,31 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
-
-ul li{
+}
+main ul li {
   padding: 40px 10px;
-  background-color: #fff;
   margin-left: 3rem;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  background-color: white;
   padding: 20px;
   border-radius: 8px;
   width: calc(25% - 10px);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .titleTrending {
-    display: flex;
-    margin: 2rem 5rem;
-    justify-content: center;
-    gap: 1rem;
+  display: flex;
+  margin: 2rem 5rem;
+  justify-content: center;
+  gap: 1rem;
 }
 .trending {
   display: flex;
   align-items: flex-start;
-  gap: 15px; 
+  gap: 15px;
   padding: 10px 0;
-  border-bottom: 1px solid #eaeaea; 
+  border-bottom: 1px solid #eaeaea;
 }
-
 
 .number {
   font-size: 24px;
@@ -157,7 +150,7 @@ ul li{
   color: #333;
   flex-shrink: 0;
 }
-  .trending-content {
+.trending-content {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -210,12 +203,70 @@ ul li{
 .trending p {
   display: inline;
 }
+
 .trending-list li .number {
   font-size: 45px;
 }
 
-
-/* Articles Section */
+/* article */
 .article {
-    background-color: #1a8917;
+  width: 50%;
+  display: flex;
+  justify-content: space-between; /* Spazio tra il contenuto e l'immagine a destra */
+  margin-bottom: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.content p {
+
+  margin: 5px 0;
+}
+
+.author { 
+    display: inline-block
+  font-weight: bold;
+}
+
+.frist {
+  font-size: 1.2rem;
+}
+
+.second {
+  font-size: 1rem;
+  color: #666;
+}
+
+.date {
+  font-size: 0.9rem;
+  color: #999;
+}
+
+.article button {
+    border: none;
+    border-radius: 20%;
+  color: #191919;
+  font-weight: bold;
+}
+
+.article .big {
+  width: 200px;
+  border-radius: 
+}
+
+.radius {
+    display: inline-block;
+  width: 30px;
+  border-radius: 50%;
+}
+.titleArt {
+    display: flex;
+    align-items: center;
+}
+img.bookmarck { position: relative;
+    width: 5px;
 }
